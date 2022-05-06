@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    height:2900px;
+}
+
+.container{
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  flex-wrap: wrap;
+ 
+} 
+.logo-section{
+    display: flex;
+    align-items: center;
+
+}
+
+.search_block{
+    border: 1px solid rgb(207, 210, 207);
+    margin-left: 1rem;
+    border-radius: 4px;
+    padding: 0.4rem;
+   
+}
+
+nav input{
+    border: none;
+    width: 189px;
+}
+nav ::placeholder{
+    color: rgba(0, 0, 0, 0.583);
+}
+nav input:focus{
+    outline: none;
+}
+
+ul{
+    display: none;
+    /* border: 2px solid red; */
+    width: 100%;
+    list-style: none;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+
+nav ul li {
+    padding-top: 1rem;
+  
+    
+
+}
+
+nav ul li:first-child{
+    padding-top: 0;
+}
+
+nav ul li a{
+    color: black;
+   text-decoration: none;
+}
+
+/* hero section */
+.hero{
+    /* border: 2px solid red; */
+    
+
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('room.png');
+
+ height:90vh;
+background-repeat: no-repeat;
+background-size:cover ;
+
+/* background-position: bottom; */
+    display: flex;
+    align-items: center;
+
+
+}
+
+.hero #myimage{
+    display: none;
+    width: 50%;
+}
+/* .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('../img/mobile-img.png');
+    min-height: calc(100vh - 65px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+} */
+
+
+.text-block{
+    width: 90%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    /* margin-top: 10rem; */
+  
+    
+    
+}
+.house{
+    height: 60px;
+    width: 60px;
+}
+
+.text-block h1{
+    color: white;
+    margin-top: 2.2rem;
+}
+
+
+
+.search_block2{
+    border: 1px solid rgb(207, 210, 207);
+    
+    
+    border-radius: 4px;
+    padding: 0.4rem;
+    min-width: 50%;
+    margin-top: 2.2rem;
+}
+
+.search_block2 img{
+    float: right;
+    position: relative;
+    top: 3px;
+}
+
+main input{
+    border: none;
+    width: 189px;
+    background: transparent;
+    color: white;
+    
+}
+
+::placeholder{
+    color: white;
+}
+main input:focus{
+    outline: none;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    
+}
+.btn_green{
+    background-color: rgb(16, 237, 119);
+    border-radius: 6px;
+    color: white;
+    width: fit-content;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.sub_buttons{
+    
+    background-color: rgba(141, 144, 143, 0.516);
+    border-radius: 6px;
+    color: white;
+    width: fit-content;
+    padding: 0.7rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  
+
+}
+
+
+
+
+/* apartment section */
+
+.heading #head{
+    color: rgba(128, 128, 128, 0.892);
+}
+
+.heading h2 span{
+    color: black;
+}
+
+.heading h2{
+    font-size: 1.2rem;
+}
+.heading{
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading a{
+    color: rgb(106, 103, 103);
+    font-size:1.2rem;
+    text-decoration: none;
+}
+#container2{
+    /* border: 2px solid red; */
+    
+    margin-top: 2rem;
+}
+
+/* .apartments{
+    border: 2px solid rgb(42, 165, 63);
+} */
+
+.cards{
+    /* width: 95%; */
+    /* margin: 0 auto; */
+    margin-top: 2rem;
+    /* border: 2px solid brown; */
+    display: grid;
+    /* flex-wrap: wrap; */
+    
+    gap: 44px;
+    grid-template-columns: 1fr 1fr ;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    /* justify-content: space-between; */
+}
+
+#flex_p{
+    display: flex;
+    align-items: center;
+
+}
+.small_text img{
+    height: 18px;
+    width: 13px;
+}
+
+.card p{
+    font-size: 0.9rem;
+}
+
+.small_text{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    /* width: 80%; */
+    /* border: 2px solid red; */
+    margin-top: 1.5rem;
+   
+}
+
+.large_text{
+    margin-top: 1.2rem;
+}
+
+.apartment_img{
+    height:150px; 
+    width:100%
+}
+
+#container3{
+    margin-top: 7rem;
+}
+
+/* media queries */
+
+@media (min-width:800px){
+
+    nav #icon{
+        display: none;
+    }
+
+    nav ul{
+        display: flex;
+        width: auto;
+        padding: 0;
+        align-items: center;
+        margin: 0;
+        
+        background-color: transparent;
+        
+    }
+
+    nav ul li{
+        font-size:1.2rem;
+        margin-left: 1.7rem;
+       
+        padding: 0;
+    }
+
+    nav ul li a{
+        color: grey;
+    }
+
+    .apartment_img{
+        height:250px;}
+
+}
+
+
+@media (min-width:992px){
+    .hero{background:#fff ;
+    /* border: 2px solid green; */
+display: flex;
+height: auto;
+
+}
+
+    .hero h1{
+        color: black;
+    }
+
+    .hero ::placeholder{
+        color: rgb(150, 147, 147);
+    }
+
+    .text-block{
+        /* border: 2px solid red; */
+        width: 40% ;
+        margin-left:2.4rem;
+    }
+
+    .hero #myimage{
+        display: block ;
+    }
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1192px){
+
+    html{
+        font-size: 20px;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
